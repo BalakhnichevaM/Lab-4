@@ -23,7 +23,7 @@ def close():                                                                   #
 window = tk.Tk()                                                               #создаем окно
 window.title("Генератор кода для получения 3000000кг рыбы в игре симулятор белого медведя")
 window.geometry('627x417')
-window.maxsize(627, 417)
+window.maxsize(627, 417)                                                       #задаем макисмальное и мимнимальное занчения размера окна
 window.minsize(627, 417)
 bg = tk.PhotoImage(file='miski1.png')
 
@@ -33,17 +33,17 @@ frame.grid()
 label_bg = tk.Label(frame, image=bg)
 label_bg.place(x=0, y=0)
 
-lbl_A = tk.Label(frame, text='место для рекламы', font=("Arial", 15), bg='#666699')
+lbl_A = tk.Label(frame, text='место для рекламы', font=("Arial", 15), bg='#666699')             #добавляем надпись, на месте которой будет выводится код
 lbl_A.grid(column=3, row=3, padx=19, pady=50)
 
 
-lbl_your_Code = tk.Label(frame, text='Ваш  код:',  font=("Arial", 15), bg='#666699')
+lbl_your_Code = tk.Label(frame, text='Ваш  код:',  font=("Arial", 15), bg='#666699')            #добавляем надпись
 lbl_your_Code.grid(column=3, row=2, padx=20, pady=0)
 
 
-btn = tk.Button(frame, text='Сгенерировать уникальный код', font=("Arial", 15), command=clicked)
+btn = tk.Button(frame, text='Сгенерировать уникальный код', font=("Arial", 15), command=clicked)     #добавляем кнопку, которая будет вызывать функцию генерации кода
 btn.grid(column=2, row=1, padx=50, pady=30)
-exit = tk.Button(frame, text='Cancel', font=("Arial", 15), command=close)
+exit = tk.Button(frame, text='Закрыть', font=("Arial", 15), command=close)                       #добавляем кнопку, которая будет закрывать окно
 exit.grid(column=3, row=5, padx=50, pady=100)
 
 
