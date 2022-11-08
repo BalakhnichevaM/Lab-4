@@ -1,3 +1,6 @@
+#Балахничёва Мария ИСУ 367852
+
+
 import tkinter as tk
 from tkinter import ttk
 from itertools import *
